@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Medtrace Nexus
 
-## Getting Started
+Medtrace Nexus is an innovative, blockchain-based solution designed to revolutionize the pharmaceutical supply chain by ensuring transparency, traceability, and security from raw material sourcing to the final consumer. The system integrates multiple platforms for hospitals, manufacturers, and suppliers, creating a unified network for demand-driven production, real-time inventory management, and provenance tracking.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Demand-Driven Manufacturing**: A platform where hospitals and stores can input their monthly drug requirements, enabling manufacturers to produce precise quantities of medicines.
+- **Unified Supply Chain Management**: A common platform connecting suppliers, manufacturers, wholesalers, and retailers for streamlined purchasing, selling, and inventory management.
+- **Provenance Tracking**: End-to-end tracking of raw materials, production, and distribution through blockchain, ensuring the authenticity and quality of medicines.
+- **Public Record Platform**: A read-only public platform providing access to batch numbers, manufacturers, quality reports, and other vital information, enhancing transparency for consumers.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js with TypeScript and Tailwind CSS for building responsive and interactive user interfaces.
+- **Backend**: Node.js for server-side logic, integrated with smart contracts for blockchain functionality.
+- **Blockchain**: Hyperledger Fabric for secure and scalable provenance tracking.
+- **Database**: PostgreSQL for storing non-blockchain data.
+- **Security**: Integration of smart contracts for automated and tamper-proof transactions.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rajatbalyan/medtrace-nexus.git
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate to the project directory:
+    ```bash
+    cd medtrace-nexus
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install dependencies:
+    ```bash
+    npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Run the development server:
+    ```bash
+    npm run dev
 
-## Deploy on Vercel
+5. Open http://localhost:3000 in your browser to see the app in action.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
+1. Register as a user (Hospital, Store, Manufacturer, etc.).
+2. Input your drug requirements for the upcoming month (for Hospitals/Stores).
+3. Manage raw materials, production, and inventory (for Manufacturers).
+4. Track and verify drug provenance via the blockchain (for all stakeholders).
+5. Access public records for medicine details (for Consumers).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
